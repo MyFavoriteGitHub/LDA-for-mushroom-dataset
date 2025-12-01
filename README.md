@@ -38,9 +38,9 @@ Despite the theoretical mismatch of applying LDA to purely categorical data, the
 These results suggest that the classes in the original data are linearly separable. The distinction between edible and poisonous samples is so clear that even a simple linear model can find a perfect decision boundary.
 
 ## Key Coefficients
-The dataset description provided by the author states that there are no simple rules for determining the edibility of a mushroom. However, the LDA coefficients provide valuable clues regarding which features should guide identification. If you had to be guided by specific traits, examining the **odor**, the **stalk**, and the **gill color** gives you significant insight.
+The dataset description provided by the author states that there are no simple rules for determining the edibility of a mushroom. However, the LDA coefficients provide valuable clues regarding which features should guide identification. If you had to be guided by specific traits, examining the **odor**, the **stalk** are the most valuble.
 
-* **Poisonous Indicators:** The model placed the highest weight on **Odor** (specifically pungent, foul, and creosote smells).
-* **Edible Indicators:** The model found strong negative coefficients (indicating edibility) for specific **Gill Colors** (buff, white) and **Stalk Roots**.
+* **Poisonous Indicators:** The model assigned the highest weights to **Odor**, specifically identifying **foul**, **spicy**, and **fishy** smells as primary signs. Additionally, the presence of **bruises** and a **scaly** stalk surface further increased the chance that the mushroom was poisonous.
+* **Edible Indicators:** It also found biggest coefficients values for specific **Stalk Root** shapes, particularly **club** or **rooted** forms. Other significant predictors included a **white** veil color and the presence of **two rings** on the stem.
 
 
